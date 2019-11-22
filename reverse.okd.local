@@ -11,15 +11,15 @@ $TTL 1d
 @               IN      NS      dns1.okd.local.
 @               IN      PTR     okd.local.
 ;
-dns1            IN      A       192.168.56.21
-mail            IN      A       192.168.56.20
+dns1            IN      A       192.168.56.20
+control		IN      A       192.168.56.22
 okd-m01		IN      A       192.168.56.30
 okd-i01		IN      A       192.168.56.31
 okd-a01		IN      A       192.168.56.32
 okd-a02		IN      A       192.168.56.33
 ;Reverse IP Information
-21      IN      PTR       dns1.okd.local.
-20      IN      PTR       mail.okd.local.
+20      IN      PTR       dns1.okd.local.
+22      IN      PTR       control.okd.local.
 30      IN      PTR       okd-m01.okd.local.
 31      IN      PTR       okd-i01.okd.local.
 32      IN      PTR       okd-a01.okd.local.
