@@ -1,0 +1,26 @@
+$TTL 1d
+@               IN      SOA     dns1.okd.local.    hostmaster.okd.local. (
+                1        ; serial
+                6h       ; refresh after 6 hours
+                1h       ; retry after 1 hour
+                1w       ; expire after 1 week
+                1d )     ; minimum TTL of 1 day
+;
+;
+;Name Server Information
+@               IN      NS      dns1.okd.local.
+@               IN      PTR     okd.local.
+;
+dns1            IN      A       192.168.56.21
+mail            IN      A       192.168.56.20
+okd-m01		IN      A       192.168.56.30
+okd-i01		IN      A       192.168.56.31
+okd-a01		IN      A       192.168.56.32
+okd-a02		IN      A       192.168.56.33
+;Reverse IP Information
+21      IN      PTR       dns1.okd.local.
+20      IN      PTR       mail.okd.local.
+30      IN      PTR       okd-m01.okd.local.
+31      IN      PTR       okd-i01.okd.local.
+32      IN      PTR       okd-a01.okd.local.
+33      IN      PTR       okd-a02.okd.local.
