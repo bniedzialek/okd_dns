@@ -2,7 +2,9 @@
 dns config files for local okd dns domain
 
 Network Details:
+
 Virtual Box host only network #3
+
 192.168.56.0/24
 
 
@@ -11,7 +13,9 @@ yum install -y bind bind-utils
 cp /etc/named.conf /root/named.conf.origin
 
 cp -f /root/okd_dns/named.conf /etc
+
 cp /root/okd_dns/forward.okd.local /var/named
+
 cp /root/okd_dns/reverse.okd.local /var/named
 
 named-checkconf okd.local /etc/named.conf
