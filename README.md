@@ -1,6 +1,10 @@
 # okd_dns
 dns config files for local okd dns domain
 
+Network Details:
+Virtual Box host only network #3
+192.168.56.0/24
+
 
 yum install -y bind bind-utils
 
