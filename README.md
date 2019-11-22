@@ -18,7 +18,7 @@ cp /root/okd_dns/forward.okd.local /var/named
 
 cp /root/okd_dns/reverse.okd.local /var/named
 
-named-checkconf okd.local /etc/named.conf
+named-checkconf /etc/named.conf
 
 named-checkzone okd.local /var/named/forward.okd.local
 
