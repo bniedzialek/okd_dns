@@ -22,7 +22,7 @@ named-checkconf /etc/named.conf
 
 named-checkzone okd.local /var/named/forward.okd.local
 
-named-checkzone okd.local /var/named/forward.okd.local
+named-checkzone okd.local /var/named/reverse.okd.local
 
 systemctl enable named
 
