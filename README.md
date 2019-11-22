@@ -25,9 +25,10 @@ named-checkzone okd.local /var/named/forward.okd.local
 named-checkzone okd.local /var/named/forward.okd.local
 
 systemctl enable named
+
 systemctl start named
 
-firewall-cmd --permanent --add-port=53/tcp
-firewall-cmd --permanent --add-port=53/udp
+firewall-cmd --permanent --add-port=53/tcp;firewall-cmd --permanent --add-port=53/udp
+
 firewall-cmd --reload
 
